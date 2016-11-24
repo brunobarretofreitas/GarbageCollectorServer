@@ -11,3 +11,4 @@ class DistanciaService(object):
         response = self.gmaps.distance_matrix(localA, localB)
         distancia = (response['rows'][0]['elements'][0]['distance']['value'] * 1.0)/1000
         return distancia
+    
