@@ -1,7 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5983c04d-fd00-4f05-81fa-a5cfcb9b5947" name="Default" comment="" />
+    <list default="true" id="5983c04d-fd00-4f05-81fa-a5cfcb9b5947" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/descriptor.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/descriptor_database.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/descriptor_pool.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/_parameterized.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/any_test.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/api_implementation.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/api_implementation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/containers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/decoder.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/descriptor_database_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/descriptor_pool_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/descriptor_pool_test1.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/descriptor_pool_test2.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/descriptor_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/encoder.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/enum_type_wrapper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/factory_test1.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/factory_test2.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/file_options_test.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/generator_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/import_test_package/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/import_test_package/inner.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/import_test_package/outer.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/json_format_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/message_factory_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/message_listener.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/message_set_extensions.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/message_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/missing_enum_values.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/more_extensions.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/more_extensions_dynamic.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/more_messages.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/packed_field_test.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/proto_builder_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/python_message.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/reflection_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/service_reflection_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/symbol_database_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/test_bad_identifiers.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/test_util.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/testing_refleaks.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/text_encoding_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/text_format_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/type_checkers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/unknown_fields_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/well_known_types.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/well_known_types_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/wire_format.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/internal/wire_format_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/json_format.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/message.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/message_factory.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/proto_builder.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/cpp_message.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/descriptor.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/descriptor.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/descriptor_containers.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/descriptor_containers.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/descriptor_database.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/descriptor_database.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/descriptor_pool.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/descriptor_pool.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/extension_dict.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/extension_dict.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/map_container.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/map_container.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/message.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/message.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/message_factory.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/message_factory.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/message_module.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/proto2_api_test.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/python.proto" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/python_protobuf.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/repeated_composite_container.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/repeated_composite_container.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/repeated_scalar_container.cc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/repeated_scalar_container.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/pyext/scoped_pyobject_ptr.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/reflection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/service_reflection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/symbol_database.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/text_encoding.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/google/protobuf/text_format.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/lixeiras_pb2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/rotas_pb2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="GarbageCollector.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,10 +114,76 @@
   <component name="FavoritesManager">
     <favorites_list name="GarbageCollector" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="lixeiras.proto" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/proto/lixeiras.proto">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lixeiras_pb2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/lixeiras_pb2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rotas_pb2.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model/rotas_pb2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/google/protobuf/pyext/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/model/rotas_pb2.py" />
+        <option value="$PROJECT_DIR$/model/lixeiras_pb2.py" />
+        <option value="$PROJECT_DIR$/teste.py" />
       </list>
     </option>
   </component>
@@ -30,14 +192,14 @@
     <option name="width" value="1366" />
     <option name="height" value="741" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -63,6 +225,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="GarbageCollector" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GarbageCollector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GarbageCollector" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -129,7 +301,30 @@
       </pane>
     </panes>
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.teste">
+    <configuration default="false" name="teste" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="GarbageCollector" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/teste.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -264,6 +459,14 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.teste" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.teste" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -287,18 +490,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32905295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -315,5 +518,55 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/google/protobuf/pyext/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proto/lixeiras.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/rotas_pb2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/lixeiras_pb2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/teste.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

@@ -1,0 +1,17 @@
+message Passo{
+  required string instrucao = 1;
+  required string distancia = 2;
+  required string tempo = 3;
+}
+
+message Rota {
+  required int32 idRota = 1;
+  required string enderecoOrigem = 2;
+  required string enderecoDestino = 3; 
+  required string tamanho = 4;
+  repeated Passo passo = 5;
+}
+
+message ListaRota{
+  repeated Rota rota = 1;
+}

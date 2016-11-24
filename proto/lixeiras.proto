@@ -1,0 +1,21 @@
+message Lixeira {
+  required int32 id = 1;
+  required string localizacao = 2;
+  required float peso = 3;
+  required StatusColeta status_coleta = 4 [default = LIVRE];
+  required StatusCapacidade status_capacidade = 5 [default = VAZIA];
+
+  enum StatusColeta {
+    ROTA = 0;
+    LIVRE = 1;
+  }
+
+  enum StatusCapacidade {
+    CHEIA = 0;
+    VAZIA = 1;
+  }
+}
+
+message ListaLixeira{
+  repeated Lixeira lixeira = 1;
+}
