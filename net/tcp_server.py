@@ -1,6 +1,7 @@
 import socket
 from threading import Thread
-from SocketServer import ThreadingMixIn
+from model import message
+from net import dispatcher
 
 # Multithreaded Python server : TCP Server Socket Thread Pool
 class ClientThread(Thread):
@@ -12,17 +13,16 @@ class ClientThread(Thread):
 
     def run(self):
         while True:
-            data = conn.recv(2048)
-            print "Server received data:", data
-            MESSAGE = raw_input("Multithreaded Python server : Enter Response from Server/Enter exit:")
-            if MESSAGE == 'exit':
-                break
-            conn.send(MESSAGE)  # echo 
+            request = conn.recv(2048) #mensagem recebida
+            mensagem = message.Mensagem(request)
+            despachante = dispatcher.Despachante()
+            resposta = despachante.getResposta(mensagem)
+            conn.send(resposta)
 
 
 # Multithreaded Python server : TCP Server Socket Program Stub
 TCP_IP = 'localhost'
-TCP_PORT = 2010
+TCP_PORT = 2009
 BUFFER_SIZE = 1024  # Usually 1024, but we need quick response
 
 tcpServer = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -31,7 +31,6 @@ threads = []
 
 while True:
     tcpServer.listen(4)
-    print "Multithreaded Python server : Waiting for connections from TCP clients..."
     (conn, (ip, port)) = tcpServer.accept()
     newthread = ClientThread(ip, port)
     newthread.start()
