@@ -37,6 +37,8 @@ cur = con.cursor()
 cur.execute('select * from lixeira')
 ver = cur.fetchone()
 '''
+
+'''
 request = "2;"
 mensagem = message.Mensagem(request)
 despachante = dispatcher.Despachante()
@@ -49,3 +51,14 @@ lista = lixeiras_pb2.ListaLixeira()
 lista.ParseFromString(resposta)
 
 print lista
+'''
+
+
+request = '3;{"id":20, "localizacao":"123123,12300", "peso":900.0, "status_capacidade":0}**gPlb5AMBaXB3GSdjO5aUD1Ftp7L131YT'
+"4;1**2**3**4**5**6**7**0"
+
+mensagem = message.Mensagem(request)
+despachante = dispatcher.Despachante()
+resposta = despachante.getResposta(mensagem)
+
+print resposta
