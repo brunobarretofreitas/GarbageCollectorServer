@@ -134,8 +134,8 @@ class DescriptorPool(object):
     """
 
     # pylint: disable=g-import-not-at-top
-    from google.protobuf import descriptor_pb2
-    file_desc_proto = descriptor_pb2.FileDescriptorProto.FromString(
+    from google.protobuf import descriptor
+    file_desc_proto = descriptor.FileDescriptorProto.FromString(
         serialized_file_desc_proto)
     self.Add(file_desc_proto)
 
