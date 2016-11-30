@@ -17,7 +17,7 @@ _sym_db = _symbol_database.Default()
 DESCRIPTOR = _descriptor.FileDescriptor(
   name='rotas.proto',
   package='',
-  serialized_pb=_b('\n\x0brotas.proto\"<\n\x05Passo\x12\x11\n\tinstrucao\x18\x01 \x02(\t\x12\x11\n\tdistancia\x18\x02 \x02(\t\x12\r\n\x05tempo\x18\x03 \x02(\t\"o\n\x04Rota\x12\x0e\n\x06idRota\x18\x01 \x02(\x05\x12\x16\n\x0e\x65nderecoOrigem\x18\x02 \x02(\t\x12\x17\n\x0f\x65nderecoDestino\x18\x03 \x02(\t\x12\x0f\n\x07tamanho\x18\x04 \x02(\t\x12\x15\n\x05passo\x18\x05 \x03(\x0b\x32\x06.Passo\" \n\tListaRota\x12\x13\n\x04rota\x18\x01 \x03(\x0b\x32\x05.Rota')
+  serialized_pb=_b('\n\x0brotas.proto\"<\n\x05Passo\x12\x11\n\tinstrucao\x18\x01 \x02(\t\x12\x11\n\tdistancia\x18\x02 \x02(\t\x12\r\n\x05tempo\x18\x03 \x02(\t\"_\n\x04Rota\x12\x16\n\x0e\x65nderecoOrigem\x18\x02 \x02(\t\x12\x17\n\x0f\x65nderecoDestino\x18\x03 \x02(\t\x12\x0f\n\x07tamanho\x18\x04 \x02(\t\x12\x15\n\x05passo\x18\x05 \x03(\x0b\x32\x06.Passo\" \n\tListaRota\x12\x13\n\x04rota\x18\x01 \x03(\x0b\x32\x05.Rota')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -76,35 +76,28 @@ _ROTA = _descriptor.Descriptor(
   containing_type=None,
   fields=[
     _descriptor.FieldDescriptor(
-      name='idRota', full_name='Rota.idRota', index=0,
-      number=1, type=5, cpp_type=1, label=2,
-      has_default_value=False, default_value=0,
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      options=None),
-    _descriptor.FieldDescriptor(
-      name='enderecoOrigem', full_name='Rota.enderecoOrigem', index=1,
+      name='enderecoOrigem', full_name='Rota.enderecoOrigem', index=0,
       number=2, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='enderecoDestino', full_name='Rota.enderecoDestino', index=2,
+      name='enderecoDestino', full_name='Rota.enderecoDestino', index=1,
       number=3, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='tamanho', full_name='Rota.tamanho', index=3,
+      name='tamanho', full_name='Rota.tamanho', index=2,
       number=4, type=9, cpp_type=9, label=2,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       options=None),
     _descriptor.FieldDescriptor(
-      name='passo', full_name='Rota.passo', index=4,
+      name='passo', full_name='Rota.passo', index=3,
       number=5, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
@@ -122,7 +115,7 @@ _ROTA = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=77,
-  serialized_end=188,
+  serialized_end=172,
 )
 
 
@@ -151,8 +144,8 @@ _LISTAROTA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=190,
-  serialized_end=222,
+  serialized_start=174,
+  serialized_end=206,
 )
 
 _ROTA.fields_by_name['passo'].message_type = _PASSO

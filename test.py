@@ -1,4 +1,5 @@
 from model import lixeiras_pb2
+from model import rotas_pb2
 import googlemaps
 from util import config as _config
 import service.distancia
@@ -64,13 +65,37 @@ resposta = despachante.getResposta(mensagem)
 
 print resposta
 '''
+'''
 config = _config.Config()
 gmaps = googlemaps.Client(key=config.googlemaps_key)
 resultado = gmaps.directions(origin="-3.765529,-38.637767", destination="-3.720905,-38.510949", waypoints="-3.756725,-38.627910|-3.739983,-38.593184", language="pt")
 
+listaRota = rotas_pb2.ListaRota()
+
 for leg in resultado["routes"][0]["legs"]:
-    print "===Endereco Inicial: " + leg["start_address"] + "\n"
-    print "===Endereco Final: " + leg["end_address"] + "\n"
+    rota = listaRota.rota.add()
+    rota.enderecoOrigem = leg["start_address"]
+    rota.enderecoDestino = leg["end_address"]
+    rota.tamanho = leg["distance"]["text"]
     for step in leg["steps"]:
-        print step["html_instructions"] + " por " + str(step["distance"]["value"]) + " metros"
-    print "\n"
+        passo  = rota.passo.add()
+        passo.instrucao = step["html_instructions"]
+        passo.distancia = step["distance"]["text"]
+        passo.tempo = step["duration"]["text"]
+
+for r in listaRota.rota:
+    print r.enderecoOrigem
+    print r.enderecoDestino
+    print r.tamanho
+    for p in rota.passo:
+        print p.instrucao
+        print p.distancia
+        print p.tempo
+'''
+
+request = "4;-3.765529,-38.637767**-3.720905,-38.510949**-3.756725,-38.627910**-3.739983,-38.593184"
+mensagem = message.Mensagem(request)
+despachante = dispatcher.Despachante()
+resposta = despachante.getResposta(mensagem)
+
+print resposta
