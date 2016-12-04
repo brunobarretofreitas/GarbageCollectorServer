@@ -5,7 +5,6 @@ message Passo{
 }
 
 message Rota {
-  required int32 idRota = 1;
   required string enderecoOrigem = 2;
   required string enderecoDestino = 3; 
   required string tamanho = 4;
