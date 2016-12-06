@@ -30,7 +30,7 @@ class ClientThread(Thread):
         self.conn.close()
 
 TCP_IP = 'localhost'
-TCP_PORT = 2051
+TCP_PORT = 2055
 BUFFER_SIZE = 1024
 
 tcpServer = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

@@ -24,10 +24,10 @@ class LixeiraRepository(object):
         self.connection.commit()
         self.closeConnection()
 
-    def updateStatusColeta(self, lixeira, status_coleta):
+    def updateStatusColeta(self, lixeira):
         cursor = self.connection.cursor()
         sql = "update lixeira set(status_coleta) = (%s) where id = %s"
-        data = (status_coleta, id)
+        data = (lixeira.status_coleta, lixeira.id)
         cursor.execute(sql, data)
         self.connection.commit()
         self.closeConnection()

@@ -30,6 +30,14 @@ class LixeiraEsqueleto(object):
         resposta = lixeiras.SerializeToString()
         return resposta
 
+    def atualizarStatusColeta(self, argumentos):
+        status_coleta = argumentos[0]
+        id_lixeiras_list = argumentos[1:len(argumentos)]
+        if(self.lixeiraService.atualizarStatusColeta(id_lixeiras_list, status_coleta)):
+            return '1'
+        else:
+            return '0'
+
 class DistanciaEsqueleto(object):
 
     def __init__(self):
