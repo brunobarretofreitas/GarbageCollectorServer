@@ -16,8 +16,9 @@ class ClientThread(Thread):
             request = self.getRequest()
             mensagem = message.Mensagem(request)
             despachante = dispatcher.Despachante()
-            mensagem = despachante.getResposta(mensagem)
+            tmensagem = despachante.getResposta(mensagem)
             resposta = mensagem.arguments
+            print resposta
             self.sendReply(resposta)
 
     def getRequest(self):
@@ -29,7 +30,7 @@ class ClientThread(Thread):
         self.conn.close()
 
 TCP_IP = 'localhost'
-TCP_PORT = 2022
+TCP_PORT = 2051
 BUFFER_SIZE = 1024
 
 tcpServer = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
