@@ -2,6 +2,8 @@ import socket
 from threading import Thread
 from model import message
 from net import dispatcher
+from model import mensagem_pb2
+from model import lixeiras_pb2
 
 # Multithreaded Python server : TCP Server Socket Thread Pool
 class ClientThread(Thread):
@@ -13,24 +15,25 @@ class ClientThread(Thread):
         print "[+] New server socket thread started for " + ip + ":" + str(port)
 
     def run(self):
-            request = self.getRequest()
-            mensagem = message.Mensagem(request)
-            despachante = dispatcher.Despachante()
-            tmensagem = despachante.getResposta(mensagem)
-            resposta = mensagem.arguments
-            print resposta
-            self.sendReply(resposta)
+        request = self.getRequest()
+        mensagem = mensagem_pb2.Mensagem()
+        mensagem.ParseFromString(request)
+
+        despachante = dispatcher.Despachante()
+        resposta = despachante.getResposta(mensagem)
+
+        self.sendReply(resposta.SerializeToString())
 
     def getRequest(self):
-        request = self.conn.recv(2048).decode('UTF-8') #mensagem recebida
-        return request
+        request = self.conn.recv(2048) #mensagem recebida
+        return str(request)
 
     def sendReply(self, response):
         self.conn.send(response)
         self.conn.close()
 
 TCP_IP = 'localhost'
-TCP_PORT = 2055
+TCP_PORT = 2068
 BUFFER_SIZE = 1024
 
 tcpServer = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

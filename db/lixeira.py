@@ -7,22 +7,22 @@ class LixeiraRepository(object):
         connectionFactory = con.ConnectionFactory()
         self.connection = connectionFactory.getConnection()
 
-    def saveLixeira(self, lixeira):
-        cursor = self.connection.cursor()
-        sql = "insert into lixeira(id,localizacao,peso,status_coleta, status_capacidade) values(%s, %s, %s, %s, %s)"
+    # def saveLixeira(self, lixeira):
+    #     cursor = self.connection.cursor()
+    #     sql = "insert into lixeira(id,localizacao,peso,status_coleta, status_capacidade) values(%s, %s, %s, %s, %s)"
+    #
+    #     data = (lixeira.id, lixeira.localizacao, lixeira.peso, 1, 1)
+    #     cursor.execute(sql, data)
+    #     self.connection.commit()
+    #     self.closeConnection()
 
-        data = (lixeira.id, lixeira.localizacao, lixeira.peso, 1, 1)
-        cursor.execute(sql, data)
-        self.connection.commit()
-        self.closeConnection()
-
-    def updateLixeira(self, lixeira):
-        cursor = self.connection.cursor()
-        sql = "update lixeira set(localizacao, peso, status_capacidade) = (%s, %s, %s) where id = %s"
-        data = (lixeira.localizacao, lixeira.peso, lixeira.status_capacidade, lixeira.id)
-        cursor.execute(sql, data)
-        self.connection.commit()
-        self.closeConnection()
+    # def updateLixeira(self, lixeira):
+    #     cursor = self.connection.cursor()
+    #     sql = "update lixeira set(localizacao, peso, status_capacidade) = (%s, %s, %s) where id = %s"
+    #     data = (lixeira.localizacao, lixeira.peso, lixeira.status_capacidade, lixeira.id)
+    #     cursor.execute(sql, data)
+    #     self.connection.commit()
+    #     self.closeConnection()
 
     def updateStatusColeta(self, lixeira):
         cursor = self.connection.cursor()

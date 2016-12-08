@@ -1,0 +1,7 @@
+message Mensagem {
+    required int32 tipo = 1;
+    required int32 id = 2;
+    required string objeto = 3;
+    required string metodo = 4;
+    repeated bytes argumentos = 5;
+}

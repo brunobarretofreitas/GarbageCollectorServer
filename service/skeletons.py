@@ -1,6 +1,7 @@
 import json
 
 from model import lixeiras_pb2
+from model import mensagem_pb2
 from service import distancia
 from service import lixeira as _l
 from service import rota as _r
@@ -11,42 +12,49 @@ class LixeiraEsqueleto(object):
     def __init__(self):
         self.lixeiraService = _l.LixeiraService()
 
-    def saveLixeira(self, argumentos):
-        lixeira_json = argumentos[0]
-        server_key = argumentos[1]
-        l = json.loads(lixeira_json) #transforma a mensagem em JSON
-        lixeira = lixeiras_pb2.Lixeira() #criar o objeto lixeira
-        lixeira.id = int(l['id'])
-        lixeira.localizacao = l['localizacao']
-        lixeira.peso = float(l['peso'])
-
-        if(self.lixeiraService.saveLixeira(lixeira, server_key)):
-            return '1'
-        else:
-            return '0'
-
-    def getLixeiras(self, argumentos):
+    def getLixeiras(self, mensagem):
         lixeiras = self.lixeiraService.getLixeiras()
-        resposta = lixeiras.SerializeToString()
+        resposta = mensagem_pb2.Mensagem()
+        resposta.tipo = mensagem.tipo
+        resposta.id = mensagem.id
+        resposta.objeto = mensagem.objeto
+        resposta.metodo = mensagem.metodo
+        resposta.argumentos.append(lixeiras.SerializeToString())
+
         return resposta
 
-    def atualizarStatusColeta(self, argumentos):
-        status_coleta = argumentos[0]
-        id_lixeiras_list = argumentos[1:len(argumentos)]
+    def atualizarStatusColeta(self, mensagem):
+        status_coleta = mensagem.argumentos[0]
+        id_lixeiras_list = mensagem.argumentos[1:len(mensagem.argumentos)]
+        resposta = mensagem_pb2.Mensagem()
+        resposta.tipo = mensagem.tipo
+        resposta.id = mensagem.id
+        resposta.objeto = mensagem.objeto
+        resposta.metodo = mensagem.metodo
+
         if(self.lixeiraService.atualizarStatusColeta(id_lixeiras_list, status_coleta)):
-            return '1'
+            resposta.argumentos.append('1')
+            return resposta
         else:
-            return '0'
+            resposta.argumentos.append('0')
+            return resposta
 
 class DistanciaEsqueleto(object):
 
     def __init__(self):
         self.distanciaService = distancia.DistanciaService()
 
-    def calcularDistancia(self, argumentos):
-        localA = argumentos[0]
-        localB = argumentos[1]
-        resposta = str(self.distanciaService.calcularDistancia(localA, localB))
+    def calcularDistancia(self, mensagem):
+        localA = mensagem.argumentos[0]
+        localB = mensagem.argumentos[1]
+
+        resposta = mensagem_pb2.Mensagem()
+        resposta.tipo = mensagem.tipo
+        resposta.id = mensagem.id
+        resposta.objeto = mensagem.objeto
+        resposta.metodo = mensagem.metodo
+        resposta.argumentos.append(str(self.distanciaService.calcularDistancia(localA, localB)))
+
         return resposta
 
 class RotaEsqueleto(object):
@@ -54,10 +62,16 @@ class RotaEsqueleto(object):
     def __init__(self):
         self.rotaService = _r.RotaService()
 
-    def calcularRota(self, argumentos):
-        origem = argumentos[0]
-        destino = argumentos[1]
-        lixeiras = argumentos[2:(len(argumentos))]
-        listaLixeira = self.rotaService.calcularRota(origem, lixeiras, destino)
-        resposta = listaLixeira.SerializeToString()
+    def calcularRota(self, mensagem):
+        origem = mensagem.argumentos[0]
+        destino = mensagem.argumentos[1]
+        lixeiras = mensagem.argumentos[2:(len(mensagem.argumentos))]
+        listaRota = self.rotaService.calcularRota(origem, lixeiras, destino)
+        resposta = mensagem_pb2.Mensagem()
+        resposta.tipo = mensagem.tipo
+        resposta.id = mensagem.id
+        resposta.objeto = mensagem.objeto
+        resposta.metodo = mensagem.metodo
+        resposta.argumentos.append(listaRota.SerializeToString())
+
         return resposta
