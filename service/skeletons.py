@@ -15,7 +15,7 @@ class LixeiraEsqueleto(object):
     def getLixeiras(self, mensagem):
         lixeiras = self.lixeiraService.getLixeiras()
         resposta = mensagem_pb2.Mensagem()
-        resposta.tipo = mensagem.tipo
+        resposta.tipo = 1
         resposta.id = mensagem.id
         resposta.objeto = mensagem.objeto
         resposta.metodo = mensagem.metodo
@@ -27,7 +27,7 @@ class LixeiraEsqueleto(object):
         status_coleta = mensagem.argumentos[0]
         id_lixeiras_list = mensagem.argumentos[1:len(mensagem.argumentos)]
         resposta = mensagem_pb2.Mensagem()
-        resposta.tipo = mensagem.tipo
+        resposta.tipo = 1
         resposta.id = mensagem.id
         resposta.objeto = mensagem.objeto
         resposta.metodo = mensagem.metodo
@@ -49,7 +49,7 @@ class DistanciaEsqueleto(object):
         localB = mensagem.argumentos[1]
 
         resposta = mensagem_pb2.Mensagem()
-        resposta.tipo = mensagem.tipo
+        resposta.tipo = 1
         resposta.id = mensagem.id
         resposta.objeto = mensagem.objeto
         resposta.metodo = mensagem.metodo
@@ -68,7 +68,8 @@ class RotaEsqueleto(object):
         lixeiras = mensagem.argumentos[2:(len(mensagem.argumentos))]
         listaRota = self.rotaService.calcularRota(origem, lixeiras, destino)
         resposta = mensagem_pb2.Mensagem()
-        resposta.tipo = mensagem.tipo
+
+        resposta.tipo = 1
         resposta.id = mensagem.id
         resposta.objeto = mensagem.objeto
         resposta.metodo = mensagem.metodo
